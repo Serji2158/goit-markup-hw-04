@@ -153,10 +153,18 @@ p {
 /*-Студия--Шапка-*/
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: #2f303a;
+  background-color: #c4c4c4;
+  background-image: url(../images/Img\ Overlay.png), url(../images/bg_\ img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
@@ -227,6 +235,35 @@ p {
   margin-left: 30px;
 }
 
+.advantages-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.icon-antena::before {
+  background-image: url();
+}
+
+.icon-clock::before {
+  background-image: url();
+}
+
+.icon-pc::before {
+  background-image: url();
+}
+
+.icon-astronavt::before {
+  background-image: url();
+}
+
 .advantages-title {
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -247,6 +284,12 @@ p {
 }
 
 /*-------Студия--Блок Чем мы занимаемся---------*/
+
+.section-what-we-do {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
 .section-name {
   font-family: Roboto;
   font-style: normal;
