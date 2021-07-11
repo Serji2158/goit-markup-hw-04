@@ -345,37 +345,50 @@ p {
   color: var(--text-color);
 }
 
+.social-links {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
 .social-icons-list {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
-  margin-top: 16px;
-  margin-bottom: 30px;
   border-radius: 50%;
   background-color: var(--text-color-white);
+  
 }
 
-.social-links {
-  display: flex;
-  margin-top: 16px;
-  margin-left: auto;
-  margin-bottom: 30px;
-  margin-right: auto;
-  align-items: center;
-  justify-content: center;
+.social-icons-list:hover {
+background-color: var(--WEB-BG-color);
+}
+
+.social-icons-list:hover.social-icons-list-item,
+.social-icons-list:hover.social-icons-list-item {
+  fill: var(--text-color-white);
 }
 
 .social-links-list + .social-links-list {
   margin-left: 10px;  
 }
 
-.social-icons-list:hover,
+.social-icons-list-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: #AFB1B8;
+}
+
 .social-icons-list-item:hover,
-.social-icons-list:focus,
 .social-icons-list-item:focus {
-background-color: var(--text-BG-color));
+  color: white;
 }
 
   /* width: 20px;
@@ -489,13 +502,14 @@ img {
 
 /*--------Постоянные клиенты-------*/
 
-.our-clients {
+.clients {
   margin-top: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.our-clients-list::after {
+/* .our-clients-list::after {
   content: '';
   display: block;
   width: 170px;
@@ -507,11 +521,39 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+} */
+
+.clients-list {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
-.our-clients-list + .our-clients-list {
+.clients-list + .clients-list {
   margin-left: 30px;
 }
+
+.clients-list:hover {
+  border: 1px solid #2196f3;
+}
+
+.clients-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 106px;
+  color: #AFB1B8;
+}
+
+.clients-list:hover .clients-icon:hover {
+  color: #2196f3;
+}
+
 /*------------------ Футер----------------- */
 
 .footer {
