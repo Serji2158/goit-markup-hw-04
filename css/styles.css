@@ -132,10 +132,6 @@ p {
   align-items: center;
 }
 
-.menu-contacts + .menu-contacts {
-  margin-left: 50px;
-}
-
 .header-contacts {
   display: block;
 
@@ -150,6 +146,25 @@ p {
   color: var(--text-BG-color);
 }
 
+/* .header-contacts:hover .list-contacts-smartphone-voice:hover {
+  fill: var(--text-BG-color);
+} */
+
+.list-contacts-mail,
+.list-contacts-smartphone {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.list-contacts-mail .email,
+.list-contacts-smartphone .phone {
+  margin-left: 10px;
+}
+
+.list-contacts-mail + .list-contacts-smartphone {
+  margin-left: 30px;
+}
 /*-Студия--Шапка-*/
 
 .hero {
@@ -361,20 +376,18 @@ p {
   height: 44px;
   border-radius: 50%;
   background-color: var(--text-color-white);
-  
 }
 
 .social-icons-list:hover {
-background-color: var(--WEB-BG-color);
+  background-color: var(--WEB-BG-color);
 }
 
-.social-icons-list:hover.social-icons-list-item,
 .social-icons-list:hover.social-icons-list-item {
   fill: var(--text-color-white);
 }
 
 .social-links-list + .social-links-list {
-  margin-left: 10px;  
+  margin-left: 10px;
 }
 
 .social-icons-list-item {
@@ -382,30 +395,13 @@ background-color: var(--WEB-BG-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  color: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .social-icons-list-item:hover,
 .social-icons-list-item:focus {
-  color: white;
+  fill: white;
 }
-
-  /* width: 20px;
-  height: 20px; */
-}
-
-/* .social-links-list::after {
-  content: '';
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: var(--text-color-white);
-  outline: 1px solid teal;
-} */
 
 /* -------------Портфолио--------------*/
 
@@ -509,20 +505,6 @@ img {
   justify-content: center;
 }
 
-/* .our-clients-list::after {
-  content: '';
-  display: block;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  box-sizing: border-box;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-} */
-
 .clients-list {
   display: flex;
   width: 170px;
@@ -547,7 +529,7 @@ img {
   justify-content: center;
   height: 60px;
   width: 106px;
-  color: #AFB1B8;
+  color: #afb1b8;
 }
 
 .clients-list:hover .clients-icon:hover {
@@ -631,13 +613,16 @@ img {
 }
 
 .social-footer-links-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   margin-top: 20px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   background-position: center;
-  background-size: contain;
+  cursor: pointer;
 }
 
 .social-footer-name {
@@ -649,4 +634,21 @@ img {
   text-transform: uppercase;
 
   color: #ffffff;
+}
+.social-footer-items {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 0px;
+}
+
+.social-footer-links-list:hover {
+  background-color: var(--WEB-BG-color);
+}
+
+.social-footer-items-icon {
+  width: 20px;
+  height: 20px;
 }
