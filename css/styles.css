@@ -48,7 +48,7 @@ p {
   padding: 0px;
 }
 
-/* Хеддер */
+/*--------------- Хеддер-------------------- */
 
 .header {
   padding-top: 24px;
@@ -235,33 +235,17 @@ p {
   margin-left: 30px;
 }
 
-.advantages-item::before {
-  content: '';
-  display: block;
+.adantages-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
 
   background-color: #f5f4fa;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.icon-antena::before {
-  background-image: url();
-}
-
-.icon-clock::before {
-  background-image: url();
-}
-
-.icon-pc::before {
-  background-image: url();
-}
-
-.icon-astronavt::before {
-  background-image: url();
 }
 
 .advantages-title {
@@ -303,14 +287,15 @@ p {
 
 .we-do-list {
   display: flex;
-  max-width: 1170px;
+  align-items: center;
+  justify-content: center;
   margin-left: -30px;
 }
 
 .we-do-item {
   margin-top: 50px;
   margin-left: 30px;
-  flex-basis: calc((100%-60px) / 3);
+  flex-basis: calc((100%-90px) / 3);
 }
 
 /*----------Студия--Наша команда---------------*/
@@ -360,23 +345,44 @@ p {
   color: var(--text-color);
 }
 
+.social-icons-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  background-color: var(--text-color-white);
+}
+
 .social-links {
   display: flex;
-  width: 206px;
-  height: 44px;
   margin-top: 16px;
   margin-left: auto;
   margin-bottom: 30px;
-  margin-left: auto;
+  margin-right: auto;
   align-items: center;
-  outline: 1px solid teal;
+  justify-content: center;
 }
 
 .social-links-list + .social-links-list {
-  margin-left: 10px;
+  margin-left: 10px;  
 }
 
-.social-links-list::after {
+.social-icons-list:hover,
+.social-icons-list-item:hover,
+.social-icons-list:focus,
+.social-icons-list-item:focus {
+background-color: var(--text-BG-color));
+}
+
+  /* width: 20px;
+  height: 20px; */
+}
+
+/* .social-links-list::after {
   content: '';
   display: inline-block;
   width: 44px;
@@ -386,7 +392,7 @@ p {
   background-repeat: no-repeat;
   background-color: var(--text-color-white);
   outline: 1px solid teal;
-}
+} */
 
 /* -------------Портфолио--------------*/
 
