@@ -95,14 +95,14 @@ p {
   margin-left: 93px;
 }
 
-.list::after {
+/* .list::after {
   content: '';
   width: 48px;
   height: 4px;
 
   background: #2196f3;
   border-radius: 2px;
-}
+} */
 
 .menu + .menu {
   margin-left: 50px;
