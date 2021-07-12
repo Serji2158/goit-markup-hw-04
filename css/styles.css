@@ -146,25 +146,29 @@ p {
   color: var(--text-BG-color);
 } */
 
-.header-contacts:hover .list-contacts-smartphone-voice-connect,
+/* .header-contacts:hover .list-contacts-smartphone-voice-connect,
 .header-contacts:hover .list-contacts-smartphone-voice-connect {
   fill: var(--text-BG-color);
-}
+} */
 
-.list-contacts-mail,
-.list-contacts-smartphone {
+.list-contacts {
   display: flex;
   align-content: center;
   justify-content: center;
 }
 
-.list-contacts-mail .email,
+/* .list-contacts-mail .email,
 .list-contacts-smartphone .phone {
   margin-left: 10px;
+} */
+
+.email + .phone {
+  margin-left: 30px;
 }
 
-.menu-contacts + .menu-contacts {
-  margin-left: 30px;
+.email:hover,
+.phone:hover {
+  fill: var(--text-BG-color);
 }
 
 /*-------------Студия--Шапка------------------*/
