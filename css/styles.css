@@ -95,6 +95,15 @@ p {
   margin-left: 93px;
 }
 
+.list::after {
+  content: '';
+  width: 48px;
+  height: 4px;
+
+  background: #2196f3;
+  border-radius: 2px;
+}
+
 .menu + .menu {
   margin-left: 50px;
 }
@@ -635,6 +644,7 @@ img {
 .social-footer-links-list {
   width: 44px;
   height: 44px;
+  border-radius: 50%;
 }
 
 .socials-footer-items {
