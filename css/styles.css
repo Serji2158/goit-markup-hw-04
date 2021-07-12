@@ -141,34 +141,26 @@ p {
   color: var(--text-color);
 }
 
-/* .header-contacts:hover,
-.header-contacts:focus {
-  color: var(--text-BG-color);
-} */
-
-/* .header-contacts:hover .list-contacts-smartphone-voice-connect,
-.header-contacts:hover .list-contacts-smartphone-voice-connect {
-  fill: var(--text-BG-color);
-} */
-
 .list-contacts {
   display: flex;
   align-content: center;
   justify-content: center;
 }
 
-/* .list-contacts-mail .email,
-.list-contacts-smartphone .phone {
-  margin-left: 10px;
-} */
+.list-contacts-icon {
+  margin-right: 10px;
+}
 
 .email + .phone {
   margin-left: 30px;
 }
 
-.email:hover,
-.phone:hover {
+.header-contacts:hover .list-contacts-icon {
   fill: var(--text-BG-color);
+}
+
+.header-contacts:hover {
+  color: var(--text-BG-color);
 }
 
 /*-------------Студия--Шапка------------------*/
@@ -617,6 +609,19 @@ img {
   margin-left: 70px;
 }
 
+.social-footer-name {
+  margin-bottom: 20px;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
 .social-footer-links {
   display: flex;
   align-items: center;
@@ -628,42 +633,16 @@ img {
 }
 
 .social-footer-links-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
-  margin-top: 20px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  background-position: center;
-  cursor: pointer;
 }
 
-.social-footer-name {
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-.social-footer-items {
-  /* cursor: pointer; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  padding: 0px; */
-
+.socials-footer-items {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
-  margin-top: 20px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   background-position: center;
